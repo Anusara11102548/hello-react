@@ -23,4 +23,16 @@ describe('isPrime', () => {
   it('returns false for negative numbers', () => {
     expect(isPrime(-5)).toBe(false);
   });
+
+  it('returns false for 4', () => {
+    expect(isPrime(4)).toBe(false);
+  });
+
+  it('returns true for 17', () => {
+    expect(isPrime(17)).toBe(true);
+  });
+
+  it('returns false for decimal numbers', () => {
+    expect(isPrime(2.5)).toBe(false);
+  });
 });
